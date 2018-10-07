@@ -23,12 +23,19 @@ This fully open-source project creates a "Monster in a Box" Halloween prop, a fu
 
 In order to replicate the MVP (v0.0.1) you will need to have prior experience with RaspberryPi, Python, 3d Printing, and some basic electronic component knowledge. However I am expecting to continue with this project and release a more complete project for the general public by Halloween 2019.
 
+## To Do:
+* Everything
+	* Relay 1: Lid Lifter
+	* Relay 2: Box Lifter
+	* Relay 3: Smoke Machine
+	* Relay 4: --
+
 
 ## Parts List:
 <pre>
 * RaspberryPi 3 B+       : http://a.co/d/8gMNQvR  ($34.99)
 * 32Gb SD Card           : http://a.co/d/ikK2kIr  ($8.99)
-* 2 Chan 5V Relay Module : http://a.co/d/2yfVcsI  ($6.79)
+* 4 Chan 5V Relay Module : http://a.co/d/eE9fITI  ($7.86)
 * 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
 * Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 </pre>
