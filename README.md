@@ -26,10 +26,11 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 
 ## Parts List:
 
-* RaspberryPi 3 B+       : https://www.amazon.com/RS-Components-Raspberry-Pi-Motherboard/dp/B07BFH96M3/             (34.99)
-* 32Gb SD Card           : https://www.amazon.com/Samsung-MicroSD-Adapter-MB-ME32GA-AM/dp/B06XWN9Q99                (8.99)
-* 2 Chan 5V Relay Module : https://www.amazon.com/SunFounder-Channel-Optocoupler-Expansion-Raspberry/dp/B00E0NTPP4/ (6.79)
-
+* RaspberryPi 3 B+       : http://a.co/d/8gMNQvR  ($34.99)
+* 32Gb SD Card           : http://a.co/d/ikK2kIr  ($8.99)
+* 2 Chan 5V Relay Module : http://a.co/d/2yfVcsI  ($6.79)
+* 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
+* Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 
 ## Release History
 
