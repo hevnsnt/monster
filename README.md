@@ -40,7 +40,7 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 ## Release History:
 
 * 0.0.1
-    * MVP -- 2018 Halloween. RaspberryPi based; because that is what I have on hand. 
+    * MVP -- 2018 Halloween. RaspberryPi based; mainly because that is what I have on hand. Future verisons will likely be ESP32 based in order to reduce cost and fit within the Hallowuino framework.
 
 ## To Do:
 * Everything! Literally nothing is done!
