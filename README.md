@@ -3,7 +3,7 @@
 
 
 <pre>
-          
+          Controlling a
            _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
           ( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
            ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
@@ -60,3 +60,6 @@ I love contributors! Please help out this project by replacing my crappy code wi
 * skiwithpete   :: https://github.com/skiwithpete/relaypi
 * jarame        :: https://www.instructables.com/id/Monster-In-A-Box-Halloween-Prop-Part-1-The-Box-or-/
                    https://www.instructables.com/id/Monster-In-A-Box-Halloween-Prop-Part-2-The-Guts/
+* Fritzing      :: http://fritzing.org/home/
+* Relay Parts.  :: https://timgolisch.wordpress.com/2015/09/12/fritzing-4-channel-relay-part/
+                   https://timgolisch.wordpress.com/2015/02/22/fritzing-2-channel-relay-part/
