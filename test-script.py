@@ -54,6 +54,7 @@ def gpiosetup():
       GPIO.output(i, GPIO.HIGH)
   
   testone()
+  GPIO.cleanup() # Reset GPIO settings
 
 
 def testone():
@@ -81,5 +82,4 @@ def testone():
 
 if __name__ == "__main__": # execute only if run as a script
   disclaimer()
-  GPIO.cleanup() # Reset GPIO settings
 
