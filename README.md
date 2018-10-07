@@ -26,12 +26,12 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 
 ## Parts List:
 <pre>
-* RaspberryPi 3 B+       : http://a.co/d/8gMNQvR  ($34.99)
+* RaspberryPi 3 B+       : http://a.co/d/8gMNQvR  ($34.99) --  Older Pis will likely work fine, but check for GPIO changes!
 * 32Gb SD Card           : http://a.co/d/ikK2kIr  ($8.99)
 * 4 Chan 5V Relay Module : http://a.co/d/eE9fITI  ($7.86)
 * 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
-* Powered Speakers       : http://a.co/d/2sLVZjJ  ($10.99) --  Not required, but you better!
-* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, but serioulsy makes it awesome!
+* Powered Speakers       : http://a.co/d/2sLVZjJ  ($10.99) --  Not required, but you should!
+* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, but seriously makes it awesome!
 * Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 </pre>
 
