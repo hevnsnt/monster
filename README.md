@@ -3,17 +3,17 @@
 
 
 <pre>
-
- _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
-( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
- ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
- |   `.'   |( OO'  .-.  '|   \ |  |\ /    _ | |'--...__)|  .---'|   /`. ' 
- |         |/   |  | |  ||    \|  | )\  :` `. '--.  .--'|  |    |  /  | | 
- |  |'.'|  |\_) |  |\|  ||  .     |/  '..`''.)   |  |  (|  '--. |  |_.' | 
- |  |   |  |  \ |  | |  ||  |\    |  .-._)   \   |  |   |  .--' |  .  '.' 
- |  |   |  |   `'  '-'  '|  | \   |  \       /   |  |   |  `---.|  |\  \  
- `--'   `--'     `-----' `--'  `--'   `-----'    `--'   `------'`--' '--' 
-                                                                 IN A BOX          
+          
+           _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
+          ( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
+           ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
+           |   `.'   |( OO'  .-.  '|   \ |  |\ /    _ | |'--...__)|  .---'|   /`. ' 
+           |         |/   |  | |  ||    \|  | )\  :` `. '--.  .--'|  |    |  /  | | 
+           |  |'.'|  |\_) |  |\|  ||  .     |/  '..`''.)   |  |  (|  '--. |  |_.' | 
+           |  |   |  |  \ |  | |  ||  |\    |  .-._)   \   |  |   |  .--' |  .  '.' 
+           |  |   |  |   `'  '-'  '|  | \   |  \       /   |  |   |  `---.|  |\  \  
+           `--'   `--'     `-----' `--'  `--'   `-----'    `--'   `------'`--' '--' 
+                                                                           IN A BOX          
 </pre>
 
 
@@ -26,11 +26,11 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 
 ## Parts List:
 <pre>
-* RaspberryPi 3 B+       : http://a.co/d/8gMNQvR  ($34.99)
-* 32Gb SD Card           : http://a.co/d/ikK2kIr  ($8.99)
-* 2 Chan 5V Relay Module : http://a.co/d/2yfVcsI  ($6.79)
-* 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
-* Pallet Box (DIY)       : https://bit.ly/2C0RcVe
+* RaspberryPi 3 B+       : [http://a.co/d/8gMNQvR](http://a.co/d/8gMNQvR)  ($34.99)
+* 32Gb SD Card           : [http://a.co/d/ikK2kIr](http://a.co/d/ikK2kIr)  ($8.99)
+* 2 Chan 5V Relay Module : [http://a.co/d/2yfVcsI](http://a.co/d/2yfVcsI)  ($6.79)
+* 2x Door Lock Actuators : [http://a.co/d/ic8SmtQ](http://a.co/d/ic8SmtQ)  ($9.57)
+* Pallet Box (DIY)       : [https://bit.ly/2C0RcVe](https://bit.ly/2C0RcVe)
 </pre>
 
 ## Release History
