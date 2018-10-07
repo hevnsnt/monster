@@ -31,7 +31,7 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 * 4 Chan 5V Relay Module : http://a.co/d/eE9fITI  ($7.86)
 * 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
 * Powered Speakers       : http://a.co/d/2sLVZjJ  ($10.99) --  Not required, but you should!
-* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, seriously makes it awesome!
+* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, makes it seriously awesome!
 * Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 </pre>
 
