@@ -41,6 +41,7 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 ## Meta
 
 Bill Swearingen – [@hevnsnt](https://twitter.com/hevnsnt) – bill@seckc.org
+
 Distributed under the GNU General Public License v3.0. See ``LICENSE`` for more information.
 
 [https://github.com/hevnsnt/](https://github.com/hevnsnt/)
