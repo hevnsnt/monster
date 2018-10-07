@@ -33,8 +33,8 @@ def disclaimer():
   print("")
   print("    --> Do not have anything connected to Relay Output <--")
   print("")
-  print("WARNING -- DO NOT PROCEED IF NOT WIRED AS DESCRIBED")
-  print("YOU COULD DAMAGE YOUR RASPBERRYPI OR OTHER EQUIPMENT")
+  print(".                  WARNING -- DO NOT PROCEED IF NOT WIRED AS DESCRIBED")
+  print(".                  YOU COULD DAMAGE YOUR RASPBERRYPI OR OTHER EQUIPMENT")
   print("")
   if raw_input("Please type 'I agree' to continue: ").upper() == "I AGREE":
     gpiosetup()
@@ -52,7 +52,8 @@ def gpiosetup():
   for i in pinList: 
       GPIO.setup(i, GPIO.OUT) 
       GPIO.output(i, GPIO.HIGH)
-      testone()
+  
+  testone()
 
 
 def testone():
