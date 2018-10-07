@@ -35,7 +35,7 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 * Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 </pre>
 
-*Note: Previous versions of RaspberryPis will likely work fine, but please check for GPIO changesbut check for GPIO changes!*
+*Note: Previous versions of RaspberryPis will likely work fine, but please check for GPIO changes!*
 
 ## Release History
 
