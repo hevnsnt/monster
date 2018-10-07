@@ -117,7 +117,7 @@ def testtwo():
 def testsound():
   print("")
   print("Test Three: Testing mp3 audio capability")
-  player = subprocess.Popen(["mplayer", "audio\\seckc.mp3", "-ss", "30"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  player = subprocess.Popen(["mplayer", "./audio/seckc.mp3", "-ss", "30"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
   time.sleep(30);
   player.stdin.write("q")
 
