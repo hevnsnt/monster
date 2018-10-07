@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: ascii -*-
 #
 # _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
 #( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
@@ -76,7 +75,7 @@ def testone():
     print "Turning all off"
     GPIO.cleanup()
     time.sleep(SleepTimeL);
-    print "[✓] Test One completed."
+    print "[+] Test One completed."
     testtwo()
 
   # End program cleanly with keyboard
@@ -106,7 +105,7 @@ def testtwo():
     time.sleep(SleepTimeL);
     GPIO.output(23, GPIO.HIGH)
     GPIO.cleanup()
-    print "[✓] Test Two completed."
+    print "[+] Test Two completed."
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
