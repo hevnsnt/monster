@@ -20,7 +20,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 
-# init list with pin numbers
+# init list with GPIO numbers
 
 pinList = [14, 15]
 
@@ -38,10 +38,10 @@ SleepTimeL = 2
 
 try:
   GPIO.output(14, GPIO.LOW)
-  print "ONE"
+  print "Testing Relay : ONE"
   time.sleep(SleepTimeL); 
   GPIO.output(15, GPIO.LOW)
-  print "TWO"
+  print "Testing Relay : TWO"
   time.sleep(SleepTimeL);  
 
   #GPIO.output(4, GPIO.LOW)
