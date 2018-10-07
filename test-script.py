@@ -17,6 +17,7 @@
 
 import RPi.GPIO as GPIO
 import time
+import subprocess
 
 SleepTimeL = 2
 
@@ -106,10 +107,19 @@ def testtwo():
     GPIO.output(23, GPIO.HIGH)
     GPIO.cleanup()
     print "[+] Test Two completed."
+    testsound()
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
+
+
+def testsound():
+  print("")
+  print("Test Three: Testing mp3 audio capability")
+  player = subprocess.Popen(["mplayer", "audio\\seckc.mp3", "-ss", "30"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  time.sleep(30);
+  player.stdin.write("q")
 
 
 if __name__ == "__main__": # execute only if run as a script
