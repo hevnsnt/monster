@@ -58,6 +58,7 @@ def gpiosetup():
 
 def testone():
   try:
+    print("")
     print("Test One: Turning each relay on, then turning all off ")
     GPIO.output(14, GPIO.LOW)
     print "Testing Relay : ONE"
@@ -83,6 +84,7 @@ def testone():
 
 def testtwo():
   try:
+    print("")
     print("Test Two: Turning each relay on then off")
     GPIO.output(14, GPIO.LOW)
     print "Testing Relay : ONE"
@@ -107,6 +109,6 @@ def testtwo():
   except KeyboardInterrupt:
     print "  Quit"
 
+
 if __name__ == "__main__": # execute only if run as a script
   disclaimer()
-
