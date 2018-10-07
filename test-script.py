@@ -75,7 +75,7 @@ def testone():
     print "Turning all off"
     GPIO.cleanup()
     time.sleep(SleepTimeL);
-    print "Test One completed."
+    print "[✓] Test One completed."
     testtwo()
 
   # End program cleanly with keyboard
@@ -105,7 +105,7 @@ def testtwo():
     time.sleep(SleepTimeL);
     GPIO.output(23, GPIO.HIGH)
     GPIO.cleanup()
-    print "Test completed."
+    print "[✓] Test Two completed."
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
