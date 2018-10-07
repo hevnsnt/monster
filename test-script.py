@@ -74,6 +74,7 @@ def testone():
     time.sleep(SleepTimeL);
     print "Turning all off"
     GPIO.cleanup()
+    time.sleep(SleepTimeL);
     print "Test One completed."
     testtwo()
 
