@@ -43,10 +43,10 @@ try:
   GPIO.output(15, GPIO.LOW)
   print "Testing Relay : TWO"
   time.sleep(SleepTimeL);  
-  GPIO.output(4, GPIO.LOW)
+  GPIO.output(18, GPIO.LOW)
   print "Testing Relay : THREE"
   time.sleep(SleepTimeL);
-  GPIO.output(17, GPIO.LOW)
+  GPIO.output(23, GPIO.LOW)
   print "Testing Relay : FOUR"
   time.sleep(SleepTimeL);
   print "Turning all off"
