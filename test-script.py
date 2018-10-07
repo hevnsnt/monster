@@ -37,7 +37,7 @@ def disclaimer():
   print(".                  YOU COULD DAMAGE YOUR RASPBERRYPI OR OTHER EQUIPMENT")
   print("")
   if raw_input("Please type 'I agree' to continue: ").upper() == "I AGREE":
-    gpiosetup()
+    testone()
   else:
     print("Cancelling")
     return
@@ -53,12 +53,11 @@ def gpiosetup():
       GPIO.setup(i, GPIO.OUT) 
       GPIO.output(i, GPIO.HIGH)
   
-  testone()
-  testtwo()
 
 
 def testone():
   try:
+    gpiosetup()
     print("")
     print("Test One: Turning each relay on, then turning all off ")
     GPIO.output(14, GPIO.LOW)
@@ -84,6 +83,7 @@ def testone():
 
 def testtwo():
   try:
+    gpiosetup()
     print("")
     print("Test Two: Turning each relay on then off")
     GPIO.output(14, GPIO.LOW)
