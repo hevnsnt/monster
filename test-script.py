@@ -58,6 +58,7 @@ def gpiosetup():
 
 def testone():
   try:
+    print("Test One: Turning each relay on, then turning all off ")
     GPIO.output(14, GPIO.LOW)
     print "Testing Relay : ONE"
     time.sleep(SleepTimeL); 
@@ -72,12 +73,39 @@ def testone():
     time.sleep(SleepTimeL);
     print "Turning all off"
     GPIO.cleanup()
-    print "Test completed."
+    print "Test One completed."
+    testtwo()
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
 
+
+def testtwo():
+  try:
+    print("Test Two: Turning each relay on then off")
+    GPIO.output(14, GPIO.LOW)
+    print "Testing Relay : ONE"
+    time.sleep(SleepTimeL); 
+    GPIO.output(14, GPIO.HIGH)
+    GPIO.output(15, GPIO.LOW)
+    print "Testing Relay : TWO"
+    time.sleep(SleepTimeL);  
+    GPIO.output(15, GPIO.HIGH)
+    GPIO.output(18, GPIO.LOW)
+    print "Testing Relay : THREE"
+    time.sleep(SleepTimeL);
+    GPIO.output(18, GPIO.HIGH)
+    GPIO.output(23, GPIO.LOW)
+    print "Testing Relay : FOUR"
+    time.sleep(SleepTimeL);
+    GPIO.output(23, GPIO.HIGH)
+    GPIO.cleanup()
+    print "Test completed."
+
+  # End program cleanly with keyboard
+  except KeyboardInterrupt:
+    print "  Quit"
 
 if __name__ == "__main__": # execute only if run as a script
   disclaimer()
