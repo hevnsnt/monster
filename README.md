@@ -31,13 +31,13 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 * 4 Chan 5V Relay Module : http://a.co/d/eE9fITI  ($7.86)
 * 2x Door Lock Actuators : http://a.co/d/ic8SmtQ  ($9.57)
 * Powered Speakers       : http://a.co/d/2sLVZjJ  ($10.99) --  Not required, but you should!
-* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, but seriously makes it awesome!
+* Fog Machine            : http://a.co/d/7cQjDfj  ($35.99) --  Not required, seriously makes it awesome!
 * Pallet Box (DIY)       : https://bit.ly/2C0RcVe
 </pre>
 
 *Note: Previous versions of RaspberryPis will likely work fine, but please check for GPIO changes!*
 
-## Release History
+## Release History:
 
 * 0.0.1
     * MVP -- 2018 Halloween. RaspberryPi based; because that is what I have on hand. 
@@ -49,15 +49,17 @@ In order to replicate the MVP (v0.0.1) you will need to have prior experience wi
 	* Relay 3: Smoke Machine
 	* Relay 4: --
 
-## Meta
+## Schematics:
 
-Bill Swearingen – [@hevnsnt](https://twitter.com/hevnsnt) – bill@seckc.org
+
+## Meta:
+Created by: Bill Swearingen – [@hevnsnt](https://twitter.com/hevnsnt) – bill@seckc.org
 
 Distributed under the GNU General Public License v3.0. See ``LICENSE`` for more information.
 
-[https://github.com/hevnsnt/](https://github.com/hevnsnt/)
+For my other projects, please see [https://github.com/hevnsnt/](https://github.com/hevnsnt/)
 
-## Contributing
+## Contributing:
 I love contributors! Please help out this project by replacing my crappy code with good code!
 
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
@@ -66,7 +68,7 @@ I love contributors! Please help out this project by replacing my crappy code wi
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-# Inspiration & Stolen Code
+## Inspiration & Stolen Code:
 * craig jameson :: https://create.arduino.cc/projecthub/craig-jameson/monster-in-a-box-41cc38
 * skiwithpete   :: https://github.com/skiwithpete/relaypi
 * jarame        :: https://www.instructables.com/id/Monster-In-A-Box-Halloween-Prop-Part-1-The-Box-or-/
