@@ -54,7 +54,6 @@ def gpiosetup():
       GPIO.output(i, GPIO.HIGH)
   
   testone()
-  GPIO.cleanup() # Reset GPIO settings
 
 
 def testone():
@@ -74,6 +73,7 @@ def testone():
     print "Turning all off"
     GPIO.cleanup()
     print "Test completed."
+    GPIO.cleanup() # Reset GPIO settings
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
