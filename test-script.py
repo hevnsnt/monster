@@ -17,7 +17,7 @@
 
 import RPi.GPIO as GPIO
 import time
-import subprocess
+import pygame
 
 SleepTimeL = 2
 
@@ -115,11 +115,16 @@ def testtwo():
 
 
 def testsound():
+  # https://pythonprogramming.net/adding-sounds-music-pygame/
   print("")
   print("Test Three: Testing mp3 audio capability")
-  player = subprocess.Popen(["mplayer", "./audio/seckc.mp3", "-ss", "30"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-  time.sleep(30);
-  player.stdin.write("q")
+  test_sound = pygame.mixer.Sound("audio/seckc.mp3")
+  counter = 1
+  while pygame.mixer.Sound.play(test_sound):
+    print("Testing audio: " + ">" * counter)
+    counter += 1
+    time.sleep(1)
+    continue
 
 
 if __name__ == "__main__": # execute only if run as a script
