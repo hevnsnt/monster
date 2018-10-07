@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
-#( '.( OO )_                  ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
+#( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
 # ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
 # |   `.'   |( OO'  .-.  '|   \ |  |\ /    _ | |'--...__)|  .---'|   /`. ' 
 # |         |/   |  | |  ||    \|  | )\  :` `. '--.  .--'|  |    |  /  | | 
@@ -9,8 +9,11 @@
 # |  |   |  |  \ |  | |  ||  |\    |  .-._)   \   |  |   |  .--' |  .  '.' 
 # |  |   |  |   `'  '-'  '|  | \   |  \       /   |  |   |  `---.|  |\  \  
 # `--'   `--'     `-----' `--'  `--'   `-----'    `--'   `------'`--' '--' 
-#                                                 IN A BOX          v1.0
+#                                                                 IN A BOX          
 #
+# Find more information about this project at
+# https://github.com/hevnsnt/monster
+# 
 
 import RPi.GPIO as GPIO
 import time
@@ -56,7 +59,8 @@ except KeyboardInterrupt:
   # Reset GPIO settings
   GPIO.cleanup()
 
+if __name__ == "__main__": # execute only if run as a script
+  domains, lnames, female, male = loadArray()
+  for x in range(int(argv[1])):
+    print getName()
 
-# find more information on this script at
-# https://github.com/hevnsnt/monster
-# Relay code from https://github.com/skiwithpete/relaypi
