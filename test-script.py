@@ -18,50 +18,67 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BCM)
-
-# init list with GPIO numbers
-
-pinList = [14, 15, 18, 23]
-
-# loop through pins and set mode and state to 'high'
-
-for i in pinList: 
-    GPIO.setup(i, GPIO.OUT) 
-    GPIO.output(i, GPIO.HIGH)
-
-# time to sleep between operations in the main loop
-
 SleepTimeL = 2
 
-# main loop
+def disclaimer():
+  print("[-] Monster in a box test program ")
+  print("")
+  print("[-] It is expected that you have a RaspberryPi connected to a 4 Channel Relay via the following pins: ")
+  print("    *  5v to VCC")
+  print("    * GND to GND")
+  print("    * GPIO14 to IN1")
+  print("    * GPIO15 to IN2")
+  print("    * GPIO18 to IN3")
+  print("    * GPIO23 to IN4")
+  print("")
+  print("    --> Do not have anything connected to Relay Output <--")
+  print("")
+  print("WARNING -- DO NOT PROCEED IF NOT WIRED AS DESCRIBED")
+  print("YOU COULD DAMAGE YOUR RASPBERRYPI OR OTHER EQUIPMENT")
+  print("")
+  if raw_input("Please type 'I agree' to continue: ").upper() == "I AGREE":
+    gpiosetup()
+  else:
+    print("Cancelling")
+    return
 
-try:
-  GPIO.output(14, GPIO.LOW)
-  print "Testing Relay : ONE"
-  time.sleep(SleepTimeL); 
-  GPIO.output(15, GPIO.LOW)
-  print "Testing Relay : TWO"
-  time.sleep(SleepTimeL);  
-  GPIO.output(18, GPIO.LOW)
-  print "Testing Relay : THREE"
-  time.sleep(SleepTimeL);
-  GPIO.output(23, GPIO.LOW)
-  print "Testing Relay : FOUR"
-  time.sleep(SleepTimeL);
-  print "Turning all off"
-  GPIO.cleanup()
-  print "Test completed."
+def gpiosetup():
+  GPIO.setmode(GPIO.BCM)
 
-# End program cleanly with keyboard
-except KeyboardInterrupt:
-  print "  Quit"
+  # init list with GPIO numbers
+  pinList = [14, 15, 18, 23]
 
-  # Reset GPIO settings
-  GPIO.cleanup()
+  # loop through pins and set mode and state to 'high'
+  for i in pinList: 
+      GPIO.setup(i, GPIO.OUT) 
+      GPIO.output(i, GPIO.HIGH)
+      testone()
 
-#if __name__ == "__main__": # execute only if run as a script
-#  domains, lnames, female, male = loadArray()
-#  for x in range(int(argv[1])):
-#    print getName()
+
+def testone():
+  try:
+    GPIO.output(14, GPIO.LOW)
+    print "Testing Relay : ONE"
+    time.sleep(SleepTimeL); 
+    GPIO.output(15, GPIO.LOW)
+    print "Testing Relay : TWO"
+    time.sleep(SleepTimeL);  
+    GPIO.output(18, GPIO.LOW)
+    print "Testing Relay : THREE"
+    time.sleep(SleepTimeL);
+    GPIO.output(23, GPIO.LOW)
+    print "Testing Relay : FOUR"
+    time.sleep(SleepTimeL);
+    print "Turning all off"
+    GPIO.cleanup()
+    print "Test completed."
+
+  # End program cleanly with keyboard
+  except KeyboardInterrupt:
+    print "  Quit"
+
+
+if __name__ == "__main__": # execute only if run as a script
+  disclaimer()
+  GPIO.cleanup() # Reset GPIO settings
 
