@@ -51,7 +51,7 @@ try:
   time.sleep(SleepTimeL);
   print "Turning all off"
   GPIO.cleanup()
-  print "Good bye!"
+  print "Test completed."
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
