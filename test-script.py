@@ -18,6 +18,7 @@
 import RPi.GPIO as GPIO
 import time
 import pygame
+import os
 
 SleepTimeL = 2
 
@@ -133,4 +134,6 @@ def testsound():
 
 
 if __name__ == "__main__": # execute only if run as a script
-  disclaimer()
+  #disclaimer()
+  testone()
+
