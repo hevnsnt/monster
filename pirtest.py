@@ -9,6 +9,5 @@ while True:
 	i=GPIO.input(18)
 	if i==0:                 #When output from motion sensor is LOW
 		print "No intruders",i
-		GPIO.output(3, 0)  #Turn OFF 
 	else:
 		print("gottcha")
