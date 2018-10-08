@@ -23,16 +23,15 @@ import os
 
 
 def seckc():
-    pygame.mixer.music.stop()
-    while True:
-    	sounda.play()
-    startmusic()
+	pygame.mixer.music.stop()
+	while True:
+		sounda.play()
+	startmusic()
 
 
 def getrandom():
 	rand = random.randint(1,10111)
 	return rand
-	#
 
 def randt():
 	i = 1
@@ -51,16 +50,15 @@ def startmusic():
   	randt()
 
 
-
-
 if __name__ == "__main__": # execute only if run as a script
 	try:
-	  pygame.mixer.init()
-	  sounda = pygame.mixer.Sound("audio/seckc.mp3")
-	  print("Starting Sound Test:")
-	  print("     [+] Starting Music"
-	  startmusic()
-	  # End program cleanly with keyboard
+		pygame.mixer.init()
+		sounda = pygame.mixer.Sound("audio/seckc.mp3")
+		print("Starting Sound Test:")
+		print("     [+] Starting Music"
+		startmusic()
+		# End program cleanly with keyboard
+
 	except KeyboardInterrupt: 
 		print("\n[/////////] Testing complete")
 		print("    Find more information about this project at")
