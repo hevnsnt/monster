@@ -23,7 +23,7 @@ import os
 SleepTimeL = 2
 
 def disclaimer():
-  print("[-] Monster in a box test program ")
+  print("[/////////] Monster in a box test program ")
   print("")
   print("[-] It is expected that you have a RaspberryPi connected to a 4 Channel Relay via the following pins: ")
   print("    *  5v to VCC")
@@ -33,10 +33,10 @@ def disclaimer():
   print("    * GPIO18 to IN3")
   print("    * GPIO23 to IN4")
   print("")
-  print("    --> Do not have anything connected to Relay Output <--")
+  print("    !!--> Do not have anything connected to Relay Output <--!!")
   print("")
-  print("Audio testing will require speakers connected to audio jack or hdmi")
-  print("and your preferences set in raspi-config.")
+  print("            Audio testing will require speakers connected to audio jack or hdmi")
+  print("                 and your output preferences properly set in raspi-config.")
   print ("")
   print(".                  WARNING -- DO NOT PROCEED IF NOT WIRED AS DESCRIBED")
   print(".                  YOU COULD DAMAGE YOUR RASPBERRYPI OR OTHER EQUIPMENT")
@@ -137,7 +137,7 @@ def testsound():
 if __name__ == "__main__": # execute only if run as a script
   disclaimer()
 
-  print("\n[+] All tests complete")
+  print("\n[/////////] Testing complete")
   print("    Find more information about this project at")
   print("    https://github.com/hevnsnt/monster")
 
