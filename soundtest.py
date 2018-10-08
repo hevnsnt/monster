@@ -66,7 +66,7 @@ if __name__ == "__main__": # execute only if run as a script
 		# End program cleanly with keyboard
 
 	except KeyboardInterrupt: 
-		print("\n[/////////] Testing complete")
+		print("\n[--EXIT--] Testing complete")
 		print("    Find more information about this project at")
 		print("    https://github.com/hevnsnt/monster")
 		print("")

@@ -135,10 +135,11 @@ def testsound():
 
 
 if __name__ == "__main__": # execute only if run as a script
-  disclaimer()
+  try:
+    disclaimer()
 
-  print("\n[/////////] Testing complete")
-  print("    Find more information about this project at")
-  print("    https://github.com/hevnsnt/monster")
-  print("")
+    print("\n[--EXIT--] Testing complete")
+    print("    Find more information about this project at")
+    print("    https://github.com/hevnsnt/monster")
+    print("")
 
