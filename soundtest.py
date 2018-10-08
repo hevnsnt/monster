@@ -23,9 +23,10 @@ import os
 
 
 def seckc():
-	pygame.mixer.music.stop()
+	sounda = pygame.mixer.Sound("audio/seckc.mp3")
+	pygame.mixer.music.pause()
 	while True:
-		sounda.play()
+		sounda.play(1)
 	startmusic()
 
 
@@ -54,7 +55,6 @@ def startmusic():
 if __name__ == "__main__": # execute only if run as a script
 	try:
 		pygame.mixer.init()
-		sounda = pygame.mixer.Sound("audio/seckc.mp3")
 		print("Starting Sound Test:")
 		print("     [+] Starting Music")
 		startmusic()
