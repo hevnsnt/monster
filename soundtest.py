@@ -47,17 +47,22 @@ def randt():
 def startmusic():
 	pygame.mixer.music.load("audio/IDGAFOS3.0.mp3")
 	pygame.mixer.music.play(-1)
+	print("     [+] Starting Random Interrupt"
   	randt()
 
 
 
 
 if __name__ == "__main__": # execute only if run as a script
-  pygame.mixer.init()
-  sounda = pygame.mixer.Sound("audio/seckc.mp3")
-  startmusic()
-
-  print("\n[/////////] Testing complete")
-  print("    Find more information about this project at")
-  print("    https://github.com/hevnsnt/monster")
-  print("")
+	try:
+	  pygame.mixer.init()
+	  sounda = pygame.mixer.Sound("audio/seckc.mp3")
+	  print("Starting Sound Test:")
+	  print("     [+] Starting Music"
+	  startmusic()
+	  # End program cleanly with keyboard
+	except KeyboardInterrupt: 
+		print("\n[/////////] Testing complete")
+		print("    Find more information about this project at")
+		print("    https://github.com/hevnsnt/monster")
+		print("")
