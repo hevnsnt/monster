@@ -128,7 +128,7 @@ def testsound():
     counter = 1
     while pygame.mixer.music.get_busy() == True:
       os.system('cls' if os.name == 'nt' else 'clear')
-      print("Testing audio: " + ">" * counter + "\n%s\\30s" % counter)
+      print("Testing audio: " + ">" * counter + "\n.     (%s\\30s)" % counter)
       counter += 1
       time.sleep(1)
       continue
@@ -138,7 +138,7 @@ if __name__ == "__main__": # execute only if run as a script
   #disclaimer()
   testone()
 
-  print("[+] All tests complete")
+  print("\n[+] All tests complete")
   print("    Find more information about this project at")
   print("    https://github.com/hevnsnt/monster")
 
