@@ -23,10 +23,9 @@ import os
 
 
 def seckc():
-	sounda = pygame.mixer.Sound("audio/seckc.mp3")
-	pygame.mixer.music.pause()
-	while True:
-		sounda.play(1)
+	pygame.mixer.music.stop()
+	pygame.mixer.music.load("audio/seckc.mp3")
+	pygame.mixer.music.play(1)
 	startmusic()
 
 
@@ -44,12 +43,16 @@ def randt():
 		else:
 			time.sleep(2)
 
+def minwait(min):
+	time.sleep(min*30)
+
 
 def startmusic():
 	pygame.mixer.music.load("audio/IDGAFOS3.0.mp3")
 	pygame.mixer.music.play(-1)
-	print("     [+] Starting Random Interrupt")
-  	randt()
+	print("     [+] Waiting 30s to start Interrupt")
+	minwait(1)
+  	seckc()
 
 
 if __name__ == "__main__": # execute only if run as a script
