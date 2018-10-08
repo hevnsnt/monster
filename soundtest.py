@@ -26,6 +26,7 @@ def seckc():
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/seckc.mp3")
 	pygame.mixer.music.play(1)
+	minwait(1)
 	startmusic()
 
 
