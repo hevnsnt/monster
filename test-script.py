@@ -117,17 +117,20 @@ def testtwo():
     print "  Quit"
 
 
-def testsound():
-  # https://pythonprogramming.net/adding-sounds-music-pygame/
-  print("")
-  print("Test Three: Testing mp3 audio capability")
-  test_sound = pygame.mixer.Sound("audio/seckc.mp3")
-  counter = 1
-  while pygame.mixer.Sound.play(test_sound):
-    print("Testing audio: " + ">" * counter)
-    counter += 1
-    time.sleep(1)
-    continue
+
+  def testsound():
+    # https://pythonprogramming.net/adding-sounds-music-pygame/
+    print("")
+    print("Test Three: Testing mp3 audio capability")
+    pygame.mixer.init()
+    pygame.mixer.music.load("audio/seckc.mp3")
+    pygame.mixer.music.play()
+    counter = 1
+    while pygame.mixer.music.get_busy() == True:
+      print("testing audio: " + ">" * counter)
+      counter += 1
+      os.system('cls' if os.name == 'nt' else 'clear')
+      continue
 
 
 if __name__ == "__main__": # execute only if run as a script
