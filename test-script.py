@@ -135,8 +135,7 @@ def testsound():
 
 
 if __name__ == "__main__": # execute only if run as a script
-  #disclaimer()
-  testone()
+  disclaimer()
 
   print("\n[+] All tests complete")
   print("    Find more information about this project at")
