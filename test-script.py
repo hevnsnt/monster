@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#
+
 # _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
 #( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
 # ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
@@ -137,4 +137,8 @@ def testsound():
 if __name__ == "__main__": # execute only if run as a script
   #disclaimer()
   testone()
+
+  print("[+] All tests complete")
+  print("    Find more information about this project at")
+  print("    https://github.com/hevnsnt/monster")
 
