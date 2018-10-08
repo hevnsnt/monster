@@ -35,6 +35,9 @@ In order to replicate, (v0.0.1) you will need to have prior experience with Rasp
 
 *Note: Previous versions of RaspberryPis will likely work fine, but please check for GPIO changes!*
 
+![RPI Schematic](https://github.com/hevnsnt/monster/blob/master/images/schematic.png "RPI Schematic")
+
+
 ## Release History:
 
 * 0.0.1
