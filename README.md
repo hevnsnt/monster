@@ -17,7 +17,7 @@
 </pre>
 
 
-A RaspberryPi based Halloween prop that is guaranteed to scare the costumes off Trick or Treaters and make your house the favorite haunt of the neighborhood! This fully open-source project creates a "Monster in a Box" Halloween prop, a fully animated box that appears to be jailing a monster which is on the verge of escaping.
+A RaspberryPi based Halloween prop that is guaranteed to scare the costumes off Trick or Treaters and make your house the favorite haunt of the neighborhood! This fully open-source project creates a "Monster in a Box" Halloween prop, a fully animated box that appears to be a monster caught in a box ... which is scarily close to escaping.
 
 In order to replicate, (v0.0.1) you will need to have prior experience with RaspberryPi, Python, 3d Printing, and some basic electronic component knowledge. However I am expecting to continue with this project and release a more complete project for the general public by Halloween 2019.
 
