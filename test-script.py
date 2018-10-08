@@ -117,7 +117,7 @@ def testtwo():
     print "  Quit"
 
 
-  def testsound():
+def testsound():
     # https://pythonprogramming.net/adding-sounds-music-pygame/
     print("")
     print("Test Three: Testing mp3 audio capability")
