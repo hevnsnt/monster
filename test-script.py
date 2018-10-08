@@ -127,9 +127,10 @@ def testsound():
     pygame.mixer.music.play()
     counter = 1
     while pygame.mixer.music.get_busy() == True:
+      os.system('cls' if os.name == 'nt' else 'clear')
       print("testing audio: " + ">" * counter)
       counter += 1
-      os.system('cls' if os.name == 'nt' else 'clear')
+      time.sleep(1)
       continue
 
 
