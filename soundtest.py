@@ -23,6 +23,7 @@ import os
 
 
 def seckc():
+	print("     [+] Playing Interrupt")
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/seckc.mp3")
 	pygame.mixer.music.play(1)
@@ -49,9 +50,9 @@ def minwait(min):
 
 
 def startmusic():
+	print("     [+] Playing background sound")
 	pygame.mixer.music.load("audio/IDGAFOS3.0.mp3")
 	pygame.mixer.music.play(-1)
-	print("     [+] Waiting 30s to start Interrupt")
 	minwait(1)
   	seckc()
 
