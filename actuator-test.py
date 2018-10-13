@@ -69,7 +69,7 @@ def testone():
     gpiosetup()
     print("")
     print("Test One: Jumping relay one.")
-    for i in range(10):
+    for i in range(100):
       GPIO.output(14, GPIO.LOW)
       time.sleep(randTime())
 
