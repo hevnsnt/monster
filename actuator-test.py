@@ -71,9 +71,10 @@ def testone():
     print("Test One: Jumping relay one.")
     for i in range(10):
       GPIO.output(14, GPIO.LOW)
-      randTime()
+      time.sleep(randTime())
+
       GPIO.output(14, GPIO.HIGH)
-      randTime()
+      time.sleep(randTime())
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
@@ -84,12 +85,12 @@ def testtwo():
   try:
     gpiosetup()
     print("")
-    print("Test One: Jumping relay one.")
+    print("Test One: Jumping relay two.")
     for i in range(10):
       GPIO.output(15, GPIO.LOW)
-      randTime()
+      time.sleep(randTime())
       GPIO.output(15, GPIO.HIGH)
-      randTime()
+      time.sleep(randTime())
 
   # End program cleanly with keyboard
   except KeyboardInterrupt:
