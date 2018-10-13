@@ -13,7 +13,7 @@
 #
 # Find more information about this project at
 # https://github.com/hevnsnt/monster
-# 
+# version 0.01
 
 import RPi.GPIO as GPIO
 import time
