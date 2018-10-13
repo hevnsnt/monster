@@ -60,7 +60,7 @@ def gpiosetup():
     GPIO.output(i, GPIO.HIGH)
 
 def randTime():
-  timeDelay = random.uniform(0.001, 1)
+  timeDelay = random.uniform(0.001, 0.005)
   return(timeDelay)
 
 
