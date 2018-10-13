@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # _   .-')                     .-') _   .-')    .-') _     ('-.  _  .-')   
-#( '.( OO )_       v1.0      ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
+#( '.( OO )_                 ( OO ) ) ( OO ). (  OO) )  _(  OO)( \( -O )  
 # ,--.   ,--.).-'),-----. ,--./ ,--,' (_)---\_)/     '._(,------.,------.  
 # |   `.'   |( OO'  .-.  '|   \ |  |\ /    _ | |'--...__)|  .---'|   /`. ' 
 # |         |/   |  | |  ||    \|  | )\  :` `. '--.  .--'|  |    |  /  | | 
@@ -82,7 +82,6 @@ def testone():
 
 def testtwo():
   try:
-  try:
     gpiosetup()
     print("")
     print("Test One: Jumping relay one.")
@@ -96,21 +95,6 @@ def testtwo():
   except KeyboardInterrupt:
     print "  Quit"
 
-
-def testsound():
-    # https://pythonprogramming.net/adding-sounds-music-pygame/
-    print("")
-    print("Test Three: Testing mp3 audio capability")
-    pygame.mixer.init()
-    pygame.mixer.music.load("audio/seckc.mp3")
-    pygame.mixer.music.play()
-    counter = 1
-    while pygame.mixer.music.get_busy() == True:
-      os.system('cls' if os.name == 'nt' else 'clear')
-      print("Testing audio: " + ">" * counter + "\n      (%s\\30s)" % counter)
-      counter += 1
-      time.sleep(1)
-      continue
 
 
 if __name__ == "__main__": # execute only if run as a script
