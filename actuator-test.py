@@ -17,9 +17,9 @@
 
 import RPi.GPIO as GPIO
 import time
-import pygame
 import os
 import sys
+import random
 
 SleepTimeL = 2
 
