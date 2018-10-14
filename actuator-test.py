@@ -73,6 +73,13 @@ def testone():
     print("  [+] Up and Down")
     GPIO.output(14, GPIO.LOW)
     GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
     print("  [+] Jumping relay one.")
 
     for i in range(30):
