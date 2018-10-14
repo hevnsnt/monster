@@ -68,6 +68,7 @@ def testone():
   try:
     gpiosetup()
     print("")
+    time.sleep(2)
     print("Test One: Jumping relay one.")
     print("  [+] Up and Down")
     GPIO.output(14, GPIO.LOW)
