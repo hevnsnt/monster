@@ -25,7 +25,7 @@ import os
 def seckc():
 	print("     [+] Playing Interrupt")
 	pygame.mixer.music.stop()
-	pygame.mixer.music.load("audio/seckc.mp3")
+	pygame.mixer.music.load("audio/Monster-in-a-Box.mp3")
 	pygame.mixer.music.play(1)
 	minwait(1)
 	startmusic()
