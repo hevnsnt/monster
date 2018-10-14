@@ -22,12 +22,49 @@ import time
 import os
 
 
+def gpiosetup():
+  GPIO.setmode(GPIO.BCM)
+
+  # init list with GPIO numbers
+  pinList = [14, 15, 18, 23]
+
+  # loop through pins and set mode and state to 'high'
+  for i in pinList: 
+    GPIO.setup(i, GPIO.OUT) 
+    GPIO.output(i, GPIO.HIGH)
+
+def openLid():
+  try:
+    gpiosetup()
+    print("")
+    time.sleep(2)
+    print("Test One: Jumping relay one.")
+    print("  [+] Up and Down")
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    time.sleep(2)
+    print("  [+] Jumping relay one.")
+
+    for i in range(30):
+      GPIO.output(14, GPIO.LOW)
+      time.sleep(randTime())
+
+      GPIO.output(14, GPIO.HIGH)
+      time.sleep(randTime())
+
 def seckc():
 	print("     [+] Playing Interrupt")
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/Monster-in-a-Box.mp3")
 	pygame.mixer.music.play(1)
 	minwait(1)
+	openLid():
 	startmusic()
 
 
@@ -59,6 +96,7 @@ def startmusic():
 
 if __name__ == "__main__": # execute only if run as a script
 	try:
+		gpiosetup()
 		pygame.mixer.init()
 		print("Starting Sound Test:")
 		print("     [+] Starting Music")
