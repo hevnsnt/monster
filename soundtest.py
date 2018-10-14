@@ -52,7 +52,7 @@ def openLid():
     time.sleep(2)
     print("  [+] Jumping relay one.")
 
-    for i in range(30):
+    for i in range(60):
       GPIO.output(14, GPIO.LOW)
       time.sleep(randTime())
 
