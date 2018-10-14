@@ -69,6 +69,11 @@ def testone():
     gpiosetup()
     print("")
     print("Test One: Jumping relay one.")
+    print("  [+] Up and Down")
+    GPIO.output(14, GPIO.LOW)
+    GPIO.output(14, GPIO.HIGH)
+    print("  [+] Jumping relay one.")
+
     for i in range(30):
       GPIO.output(14, GPIO.LOW)
       time.sleep(randTime())
@@ -105,6 +110,7 @@ if __name__ == "__main__": # execute only if run as a script
     else:
       disclaimer()
     
+    GPIO.cleanup()
     print("\n[--EXIT--] Testing complete")
     print("    Find more information about this project at")
     print("    https://github.com/hevnsnt/monster")
