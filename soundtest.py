@@ -57,6 +57,9 @@ def openLid():
 
       GPIO.output(14, GPIO.HIGH)
       time.sleep(randTime())
+  # End program cleanly with keyboard
+  except KeyboardInterrupt:
+    print "  Quit"
 
 def seckc():
 	print("     [+] Playing Interrupt")
