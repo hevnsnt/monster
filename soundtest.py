@@ -61,7 +61,7 @@ def openLid():
   # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
- 
+
 
 def seckc():
 	print("     [+] Playing Interrupt")
@@ -69,7 +69,7 @@ def seckc():
 	pygame.mixer.music.load("audio/Monster-in-a-Box.mp3")
 	pygame.mixer.music.play(1)
 	minwait(1)
-	openLid():
+	openLid()
 	startmusic()
 
 
