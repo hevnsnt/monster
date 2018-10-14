@@ -33,6 +33,7 @@ def gpiosetup():
     GPIO.setup(i, GPIO.OUT) 
     GPIO.output(i, GPIO.HIGH)
 
+
 def openLid():
   try:
     gpiosetup()
@@ -60,6 +61,7 @@ def openLid():
   # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
+ 
 
 def seckc():
 	print("     [+] Playing Interrupt")
