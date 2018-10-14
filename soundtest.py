@@ -68,9 +68,13 @@ def seckc():
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/Monster-in-a-Box.mp3")
 	pygame.mixer.music.play(1)
-	minwait(1)
 	openLid()
+	minwait(1)
 	startmusic()
+
+def randTime():
+  timeDelay = random.uniform(0.01, 0.5)
+  return(timeDelay)
 
 
 def getrandom():
@@ -109,6 +113,7 @@ if __name__ == "__main__": # execute only if run as a script
 		# End program cleanly with keyboard
 
 	except KeyboardInterrupt: 
+		GPIO.cleanup()
 		print("\n[--EXIT--] Testing complete")
 		print("    Find more information about this project at")
 		print("    https://github.com/hevnsnt/monster")
