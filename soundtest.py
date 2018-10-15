@@ -66,7 +66,7 @@ def openLid():
 def seckc():
 	print("     [+] Playing Interrupt")
 	pygame.mixer.music.stop()
-	pygame.mixer.music.load("audio/Monster-in-a-Box.mp3")
+	pygame.mixer.music.load("audio/Monster-scream.mp3")
 	pygame.mixer.music.play(1)
 	openLid()
 	minwait(1)
@@ -97,7 +97,7 @@ def minwait(min):
 
 def startmusic():
 	print("     [+] Playing background sound")
-	pygame.mixer.music.load("audio/IDGAFOS3.0.mp3")
+	pygame.mixer.music.load("audio/monster-sleeping.mp3")
 	pygame.mixer.music.play(-1)
 	minwait(1)
   	seckc()
