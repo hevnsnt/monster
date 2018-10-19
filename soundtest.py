@@ -105,7 +105,7 @@ def startmusic():
 
 if __name__ == "__main__": # execute only if run as a script
 	try:
-		call(["amixer sset PCM,0 200%"])
+		#call(["amixer sset PCM,0 200%"])
 		gpiosetup()
 		pygame.mixer.init()
 		print("Starting Sound Test:")
