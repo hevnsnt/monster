@@ -105,11 +105,11 @@ def startmusic():
 if __name__ == "__main__": # execute only if run as a script
 	try:
 		os.system("cat monster.txt") #Set Raspi Audio Output all the way up
-		print("[+] Adjusting RaspberryPi Audio volume to 100%")
+		print("[+] Adjusting RaspberryPi Audio volume to 100%\n")
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup()
 		pygame.mixer.init()
-		print("[+] Starting Sound Test:")
+		print("\n[+] Starting Sound Test:")
 		print("     [+] Starting Music")
 		startmusic()
 		# End program cleanly with keyboard
