@@ -16,7 +16,6 @@
 # 
 import pygame
 import random
-from subprocess import call
 import RPi.GPIO as GPIO
 import time
 import os
@@ -105,7 +104,7 @@ def startmusic():
 
 if __name__ == "__main__": # execute only if run as a script
 	try:
-		#call(["amixer sset PCM,0 200%"])
+		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup()
 		pygame.mixer.init()
 		print("Starting Sound Test:")
