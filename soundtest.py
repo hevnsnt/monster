@@ -39,7 +39,7 @@ def openLid():
     print("")
     time.sleep(2)
     print("Test One: Jumping relay one.")
-    print("  [+] Up and Down")
+    print("     [+] Up and Down")
     GPIO.output(14, GPIO.LOW)
     GPIO.output(14, GPIO.HIGH)
     time.sleep(2)
@@ -49,7 +49,7 @@ def openLid():
     GPIO.output(14, GPIO.LOW)
     GPIO.output(14, GPIO.HIGH)
     time.sleep(2)
-    print("  [+] Jumping relay one.")
+    print("     [+] Jumping relay one.")
 
     for i in range(60):
       GPIO.output(14, GPIO.LOW)
@@ -104,6 +104,7 @@ def startmusic():
 
 if __name__ == "__main__": # execute only if run as a script
 	try:
+		print("Adjusting RaspberryPi Audio volume to 100%")
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup()
 		pygame.mixer.init()
