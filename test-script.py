@@ -123,7 +123,7 @@ def testsound():
     print("")
     print("Test Three: Testing mp3 audio capability")
     pygame.mixer.init()
-    pygame.mixer.music.load("audio/seckc.mp3")
+    pygame.mixer.music.load("audio/monster-sleeping.mp3")
     pygame.mixer.music.play()
     counter = 1
     while pygame.mixer.music.get_busy() == True:
