@@ -63,9 +63,8 @@ def openLid():
 
 def smoke():
   try:
-    gpiosetup()
     print("")
-    print("Turning on fog machine")
+    print("Adding some smoke to the box:")
     print("     [+] Fog on")
     GPIO.output(15, GPIO.LOW)
     time.sleep(15)
@@ -83,10 +82,10 @@ def monsterscream():
 	pygame.mixer.music.load("audio/Monster-scream.mp3")
 	pygame.mixer.music.play(1)
 	openLid()
-	#minwait(1)
 	startmusic()
 
 def randTime():
+  '''This function returns a random time'''
   timeDelay = random.uniform(0.01, 0.5)
   return(timeDelay)
 
@@ -109,6 +108,7 @@ if __name__ == "__main__": # execute only if run as a script
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup() #Setup the GPIO pins
 		pygame.mixer.init()
+		print("Everything appears correct!")
 		print("\n[+] Monster in a box is online")
 		print("     [+] Waking up Monster...")
 		startmusic()
@@ -118,5 +118,5 @@ if __name__ == "__main__": # execute only if run as a script
 		GPIO.cleanup()
 		print("\n[--EXIT--] Monster in a box complete")
 		print("    Find more information about this project at")
-		print("    https://github.com/hevnsnt/monster")
+		print("     [[ https://github.com/hevnsnt/monster ]]")
 		print("")
