@@ -102,7 +102,7 @@ if __name__ == "__main__": # execute only if run as a script
 	try:
 		os.system('cls' if os.name == 'nt' else 'clear')
 		nosmoke = False
-		if len(sys.argv) > 0: 
+		if len(sys.argv) > 1: 
 				if sys.argv[1] == "-s":
 					nosmoke = True
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
