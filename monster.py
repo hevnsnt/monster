@@ -24,33 +24,26 @@ import os
 def gpiosetup():
   '''Setup the GPIO pins, note this is written to support 4 relays on pins 14, 15, 18, and 23 of Raspi.
   However, you do not need to have a 4 relay board. If you only want to lift lid, connect just pin 14,
-  if you want two 14 and 15 and so on. '''
-  GPIO.setmode(GPIO.BCM)
-  pinList = [14, 15, 18, 23] # These are Raspi GPIO numbers, Edit this if your setup is different.
+  if you want two 14 & 15 and so on. '''
 
-  # loop through pins and set mode and state to 'HIGH' as Relays move from NC to NO when moved 'LOW' 
+  GPIO.setmode(GPIO.BCM)
+  pinList = [14, 15, 18, 23] # These are the connected Raspi GPIO pins
+  # See https://github.com/hevnsnt/monster/blob/master/images/pi3_gpio.png for pinout
+  # Edit this if your setup is different.
+
+  # Loop through pins and set mode and state to 'HIGH' as Relays move from NC to NO when moved 'LOW' 
   for i in pinList: 
     GPIO.setup(i, GPIO.OUT) 
     GPIO.output(i, GPIO.HIGH)
 
 
 def openLid():
+  ''' This assumes the lid actuators are on GPIO 14, edit below to match your setup'''
   try:
     gpiosetup()
     print("")
     print("Jumping the Lid (Relay 1)")
-    print("     [+] Up and Down")
-    GPIO.output(14, GPIO.LOW)
-    GPIO.output(14, GPIO.HIGH)
-    time.sleep(2)
-    GPIO.output(14, GPIO.LOW)
-    GPIO.output(14, GPIO.HIGH)
-    time.sleep(2)
-    GPIO.output(14, GPIO.LOW)
-    GPIO.output(14, GPIO.HIGH)
-    time.sleep(2)
     print("     [+] Jumping Lid")
-
     for i in range(60):
       GPIO.output(14, GPIO.LOW)
       time.sleep(randTime())
@@ -62,6 +55,7 @@ def openLid():
     print "  Quit"
 
 def smoke():
+  ''' This assumes the smoke machine is on GPIO 15, edit below to match your setup'''
   try:
     print("")
     print("Adding some smoke to the box:")
