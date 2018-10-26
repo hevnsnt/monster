@@ -18,7 +18,7 @@ import pygame
 import random
 import RPi.GPIO as GPIO
 import time
-import os
+import os, sys
 
 
 def gpiosetup():
