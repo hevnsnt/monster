@@ -100,7 +100,7 @@ if __name__ == "__main__": # execute only if run as a script
 		os.system('cls' if os.name == 'nt' else 'clear')
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		print("[+] Adjusting RaspberryPi Audio volume to 100%\n") #Set Raspi Audio Output all the way up
-		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
+		#os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup() #Setup the GPIO pins
 		pygame.mixer.init()
 		print("Everything appears correct!")

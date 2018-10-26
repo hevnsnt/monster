@@ -45,9 +45,9 @@ In order to replicate, (v0.0.1) you will need to have prior experience with Rasp
 
 ## To Do:
 * Everything! Literally nothing is done!
-	* Relay 1: Lid Lifter
+	* Relay 1: Lid Lifter [done]
 	* Relay 2: Box Lifter
-	* Relay 3: Smoke Machine
+	* Relay 3: Smoke Machine [done]
 	* Relay 4: --
 
 ## Schematics:
