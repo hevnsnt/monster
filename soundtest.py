@@ -37,7 +37,6 @@ def openLid():
   try:
     gpiosetup()
     print("")
-    smoke()
     print("Test One: Jumping relay one.")
     print("     [+] Up and Down")
     GPIO.output(14, GPIO.LOW)
@@ -77,6 +76,7 @@ def smoke():
 
 
 def seckc():
+	smoke()
 	print("     [+] Playing Interrupt")
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/Monster-scream.mp3")
