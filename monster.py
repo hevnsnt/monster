@@ -57,14 +57,17 @@ def openLid():
 def smoke():
   ''' This assumes the smoke machine is on GPIO 15, edit below to match your setup'''
   try:
-    print("")
-    print("Adding some smoke to the box:")
-    print("     [+] Fog on")
-    GPIO.output(15, GPIO.LOW)
-    time.sleep(15)
-    GPIO.output(15, GPIO.HIGH)
-    print("     [+] Fog off")
-  # End program cleanly with keyboard
+  	if nosmoke is True:
+  		print("Skipping Smoke")
+  	else:
+	    print("")
+	    print("Adding some smoke to the box:")
+	    print("     [+] Fog on")
+	    GPIO.output(15, GPIO.LOW)
+	    time.sleep(15)
+	    GPIO.output(15, GPIO.HIGH)
+	    print("     [+] Fog off")
+	  # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
 
@@ -98,6 +101,9 @@ def startmusic():
 if __name__ == "__main__": # execute only if run as a script
 	try:
 		os.system('cls' if os.name == 'nt' else 'clear')
+		nosmoke = False
+		if sys.argv[1] == "-s":
+			nosmoke = True
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		print("[+] Adjusting RaspberryPi Audio volume to 100%\n") #Set Raspi Audio Output all the way up
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
