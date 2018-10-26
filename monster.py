@@ -64,7 +64,7 @@ def smoke():
   try:
     gpiosetup()
     print("")
-    print("Test Two: Run fog machine")
+    print("Turning on fog machine")
     print("     [+] Fog on")
     GPIO.output(15, GPIO.LOW)
     time.sleep(15)
