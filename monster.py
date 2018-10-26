@@ -58,7 +58,7 @@ def smoke():
   ''' This assumes the smoke machine is on GPIO 15, edit below to match your setup'''
   try:
   	if nosmoke is True:
-  		print("Skipping Smoke")
+  		print("     [-] Skipping Smoke")
   	else:
 	    print("")
 	    print("Adding some smoke to the box:")
@@ -101,12 +101,12 @@ def startmusic():
 if __name__ == "__main__": # execute only if run as a script
 	try:
 		os.system('cls' if os.name == 'nt' else 'clear')
+		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		nosmoke = False
 		if len(sys.argv) > 1: 
 				if sys.argv[1] == "-s":
 					print("[-] Smoke mode: [DISABLED] ")
 					nosmoke = True
-		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		print("[+] Adjusting RaspberryPi Audio volume to 100%\n") #Set Raspi Audio Output all the way up
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup() #Setup the GPIO pins
