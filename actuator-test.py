@@ -113,7 +113,7 @@ def testtwo():
 
 if __name__ == "__main__": # execute only if run as a script
   try:
-    if sys.argv[1] == "-s":
+    if len(sys.argv) > 0 and sys.argv[1] == "-s":
       testone()
     else:
       disclaimer()
