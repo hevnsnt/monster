@@ -37,7 +37,7 @@ def openLid():
   try:
     gpiosetup()
     print("")
-    time.sleep(2)
+    smoke()
     print("Test One: Jumping relay one.")
     print("     [+] Up and Down")
     GPIO.output(14, GPIO.LOW)
@@ -57,6 +57,20 @@ def openLid():
 
       GPIO.output(14, GPIO.HIGH)
       time.sleep(randTime())
+  # End program cleanly with keyboard
+  except KeyboardInterrupt:
+    print "  Quit"
+
+def smoke():
+  try:
+    gpiosetup()
+    print("")
+    print("Test Two: Run fog machine")
+    print("     [+] Fog on")
+    GPIO.output(15, GPIO.LOW)
+    time.sleep(15)
+    GPIO.output(15, GPIO.HIGH)
+    print("     [+] Fog off")
   # End program cleanly with keyboard
   except KeyboardInterrupt:
     print "  Quit"
