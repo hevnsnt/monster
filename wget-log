@@ -1,15 +1,0 @@
---2018-10-22 21:50:12--  http://donfoley.com/index.php?eddfile=587%3A146%3A1%3A0
-Resolving donfoley.com (donfoley.com)... 192.254.239.150
-Connecting to donfoley.com (donfoley.com)|192.254.239.150|:80... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: http://donfoley.com/?eddfile=587%3A146%3A1%3A0 [following]
---2018-10-22 21:50:13--  http://donfoley.com/?eddfile=587%3A146%3A1%3A0
-Reusing existing connection to donfoley.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: ‘index.php?eddfile=587:146:1:0’
-
-index.php?eddfile=587:146:1:0     [<=>                                            ]       0  --.-KB/s               index.php?eddfile=587:146:1:0     [ <=>                                           ]  37.02K   121KB/s               index.php?eddfile=587:146:1:0     [  <=>                                          ]  50.74K   165KB/s    in 0.3s    
-
-2018-10-22 21:50:14 (165 KB/s) - ‘index.php?eddfile=587:146:1:0’ saved [51957]
-
