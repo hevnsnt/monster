@@ -104,6 +104,7 @@ if __name__ == "__main__": # execute only if run as a script
 		nosmoke = False
 		if len(sys.argv) > 1: 
 				if sys.argv[1] == "-s":
+					print("[-] Smoke mode: [DISABLED] ")
 					nosmoke = True
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		print("[+] Adjusting RaspberryPi Audio volume to 100%\n") #Set Raspi Audio Output all the way up
