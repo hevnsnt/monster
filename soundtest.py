@@ -82,7 +82,7 @@ def seckc():
 	pygame.mixer.music.load("audio/Monster-scream.mp3")
 	pygame.mixer.music.play(1)
 	openLid()
-	minwait(1)
+	#minwait(1)
 	startmusic()
 
 def randTime():
