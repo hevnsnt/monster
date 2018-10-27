@@ -112,6 +112,7 @@ def halloween():
   pygame.mixer.music.play(-1)
   time.sleep(2)
   mouth(.353)
+  print("Happy Halloween")
   mouth(.286)
   mouth(.329)
   mouth(.351)
@@ -133,7 +134,8 @@ if __name__ == "__main__": # execute only if run as a script
 				if sys.argv[1] == "-s":
 					print("[-] Smoke mode: [DISABLED] ")
 					nosmoke = True
-		print("[+] Smoke mode: [ENABLED] (Disable with -s)")
+		else:
+			print("[+] Smoke mode: [ENABLED] (Disable with -s)")
 		print("[+] Adjusting RaspberryPi Audio volume to 100%\n") #Set Raspi Audio Output all the way up
 		os.system("amixer sset PCM,0 200%") #Set Raspi Audio Output all the way up
 		gpiosetup() #Setup the GPIO pins
