@@ -126,6 +126,7 @@ def halloween():
   mouth(.230)
   mouth(2.334)
   time.sleep(10)
+  snore()
   
 
   def snore():
