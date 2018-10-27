@@ -114,7 +114,7 @@ def halloween():
   pygame.mixer.music.load("audio/Happy_Halloween.mp3")
   pygame.mixer.music.play(-1)
   time.sleep(2)
-  print("[+] Happy Halloween")
+  print("     [+] Happy Halloween")
   mouth(.353)
   mouth(.286)
   mouth(.329)
@@ -124,7 +124,7 @@ def halloween():
   mouth(.241)
   mouth(.291)
   mouth(.230)
-  time.sleep(2)
+  time.sleep(10)
   startmusic()
 
 
