@@ -124,6 +124,7 @@ def halloween():
   mouth(.241)
   mouth(.291)
   mouth(.230)
+  mouth(2.334)
   time.sleep(10)
   startmusic()
 
