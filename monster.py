@@ -78,6 +78,7 @@ def monsterscream():
 	pygame.mixer.music.stop()
 	pygame.mixer.music.load("audio/Monster-scream.mp3")
 	pygame.mixer.music.play(1)
+	time.sleep(1.5)
 	openLid()
 	halloween()
 	
@@ -119,6 +120,7 @@ def halloween():
   mouth(.241)
   mouth(.291)
   mouth(.230)
+  time.sleep(2)
   startmusic()
 
 
