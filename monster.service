@@ -1,0 +1,14 @@
+[Unit]
+Description=Monster in a box
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python -u /home/pi/monster/monster.py
+WorkingDirectory=/home/pi/monster
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
