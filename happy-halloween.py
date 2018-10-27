@@ -23,6 +23,7 @@ def mouth(opentime):
   '''This function moves the mouth up and down'''
   GPIO.output(14, GPIO.LOW)
   time.sleep(opentime)
+  GPIO.output(14, GPIO.HIGH)
 
 
 if __name__ == "__main__": # execute only if run as a script
@@ -31,7 +32,7 @@ if __name__ == "__main__": # execute only if run as a script
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		monster.gpiosetup()
 		mouth(.300)
-		
+		GPIO.cleanup()
 		# End program cleanly with keyboard
 
 	except KeyboardInterrupt: 
