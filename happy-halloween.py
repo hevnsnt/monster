@@ -59,8 +59,8 @@ if __name__ == "__main__": # execute only if run as a script
 		monster.gpiosetup()
 		pygame.mixer.init()
 		pygame.mixer.music.load("audio/monster-sleeping.mp3")
-	    pygame.mixer.music.play(-1)
-	    time.sleep(1.286)
+		pygame.mixer.music.play(-1)
+		time.sleep(1.286)
 		halloween()
 		GPIO.cleanup()
 		# End program cleanly with keyboard
