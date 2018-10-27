@@ -21,8 +21,8 @@ import os, sys, monster
 
 def mouth(opentime):
   '''This function moves the mouth up and down'''
-    GPIO.output(14, GPIO.LOW)
-    time.sleep(opentime)
+  GPIO.output(14, GPIO.LOW)
+  time.sleep(opentime)
 
 
 if __name__ == "__main__": # execute only if run as a script
