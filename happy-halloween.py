@@ -58,7 +58,7 @@ if __name__ == "__main__": # execute only if run as a script
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		monster.gpiosetup()
 		pygame.mixer.init()
-		pygame.mixer.music.load("audio/monster-sleeping.mp3")
+		pygame.mixer.music.load("audio/Happy_Halloween.mp3")
 		pygame.mixer.music.play(-1)
 		time.sleep(1.286)
 		halloween()
