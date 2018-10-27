@@ -79,7 +79,8 @@ def monsterscream():
 	pygame.mixer.music.load("audio/Monster-scream.mp3")
 	pygame.mixer.music.play(1)
 	openLid()
-	startmusic()
+	halloween()
+	
 
 def randTime():
   '''This function returns a random time'''
@@ -96,6 +97,29 @@ def startmusic():
 	pygame.mixer.music.play(-1)
 	minwait(1)
   	monsterscream()
+
+def mouth(opentime):
+  '''This function moves the mouth up and down'''
+  GPIO.output(14, GPIO.LOW)
+  time.sleep(opentime)
+  GPIO.output(14, GPIO.HIGH)
+  time.sleep(0.1)
+
+
+def halloween():
+  pygame.mixer.music.load("audio/Happy_Halloween.mp3")
+  pygame.mixer.music.play(-1)
+  time.sleep(2)
+  mouth(.353)
+  mouth(.286)
+  mouth(.329)
+  mouth(.351)
+  mouth(.873)
+  mouth(.290)
+  mouth(.241)
+  mouth(.291)
+  mouth(.230)
+  startmusic()
 
 
 if __name__ == "__main__": # execute only if run as a script

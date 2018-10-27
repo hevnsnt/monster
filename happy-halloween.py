@@ -29,25 +29,15 @@ def mouth(opentime):
 
 def halloween():
   mouth(.353)
-  print("one")
   mouth(.286)
-  print("one")
   mouth(.329)
-  print("one")
   mouth(.351)
-  print("one")
   mouth(.873)
-  print("one")
   mouth(.290)
-  print("one")
   mouth(.241)
-  print("one")
   mouth(.291)
-  print("one")
   mouth(.230)
-  print("one")
   mouth(2.334)
-  print("done")
 
 
 
