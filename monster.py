@@ -108,11 +108,13 @@ def mouth(opentime):
 
 
 def halloween():
+  time.sleep(1)
+  pygame.mixer.music.stop()
   pygame.mixer.music.load("audio/Happy_Halloween.mp3")
   pygame.mixer.music.play(-1)
   time.sleep(2)
+  print("[+] Happy Halloween")
   mouth(.353)
-  print("Happy Halloween")
   mouth(.286)
   mouth(.329)
   mouth(.351)
