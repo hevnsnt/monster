@@ -126,7 +126,16 @@ def halloween():
   mouth(.230)
   mouth(2.334)
   time.sleep(10)
-  startmusic()
+  
+
+  def snore():
+  	print("     [+] Monster going to sleep")
+  	pygame.mixer.music.stop()
+  	pygame.mixer.music.load("audio/SNORE003.wav")
+  	pygame.mixer.music.play(-1)
+  	minwait(2)
+  	startmusic()
+
 
 
 if __name__ == "__main__": # execute only if run as a script
