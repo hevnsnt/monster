@@ -80,7 +80,6 @@ def monsterscream():
 	pygame.mixer.music.play(1)
 	time.sleep(1.5)
 	openLid()
-	halloween()
 	
 
 def randTime():
@@ -98,6 +97,7 @@ def startmusic():
 	pygame.mixer.music.play(-1)
 	minwait(1)
   	monsterscream()
+  	halloween()
 
 def mouth(opentime):
   '''This function moves the mouth up and down'''
