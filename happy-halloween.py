@@ -60,7 +60,7 @@ if __name__ == "__main__": # execute only if run as a script
 		pygame.mixer.init()
 		pygame.mixer.music.load("audio/Happy_Halloween.mp3")
 		pygame.mixer.music.play(-1)
-		time.sleep(1.286)
+		time.sleep(2)
 		halloween()
 		GPIO.cleanup()
 		# End program cleanly with keyboard
