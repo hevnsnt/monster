@@ -92,10 +92,11 @@ def minwait(min):
 
 
 def startmusic():
-	print("     [+] Playing monster sleeping sound")
+	print("     [+] Monster is sleeping")
 	pygame.mixer.music.load("audio/monster-sleeping.mp3")
 	pygame.mixer.music.play(-1)
 	minwait(1)
+	print("     [+] Waking up Monster")
   	monsterscream()
   	halloween()
 
@@ -144,7 +145,6 @@ if __name__ == "__main__": # execute only if run as a script
 		pygame.mixer.init()
 		print("Everything appears correct!")
 		print("\n[+] Monster in a box is online")
-		print("     [+] Waking up Monster...")
 		startmusic()
 		# End program cleanly with keyboard
 
