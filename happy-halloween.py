@@ -24,6 +24,32 @@ def mouth(opentime):
   GPIO.output(14, GPIO.LOW)
   time.sleep(opentime)
   GPIO.output(14, GPIO.HIGH)
+  time.sleep(0.1)
+
+
+def halloween():
+  mouth(.353)
+  print("one")
+  mouth(.286)
+  print("one")
+  mouth(.329)
+  print("one")
+  mouth(.351)
+  print("one")
+  mouth(.873)
+  print("one")
+  mouth(.290)
+  print("one")
+  mouth(.241)
+  print("one")
+  mouth(.291)
+  print("one")
+  mouth(.230)
+  print("one")
+  mouth(2.334)
+  print("done")
+
+
 
 
 if __name__ == "__main__": # execute only if run as a script
@@ -31,7 +57,11 @@ if __name__ == "__main__": # execute only if run as a script
 		os.system('cls' if os.name == 'nt' else 'clear')
 		os.system("cat monster.txt") # This is the easist way I know how to do this. CHANGE MY MIND
 		monster.gpiosetup()
-		mouth(.300)
+		pygame.mixer.init()
+		pygame.mixer.music.load("audio/monster-sleeping.mp3")
+	    pygame.mixer.music.play(-1)
+	    time.sleep(1.286)
+		halloween()
 		GPIO.cleanup()
 		# End program cleanly with keyboard
 
